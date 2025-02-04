@@ -9,15 +9,15 @@ function Navbar() {
 
   return (
     <nav className='flex justify-between relative overflow-x-clip'>
-      <img src={bonsai_logo} alt='bonsai_logo' />
+      <img src={bonsai_logo} alt='bonsai_logo' className='pt-4 pl-4' />
 
-      <button type='button' onClick={() => setIsOpen(!isOpen)}>
+      <button type='button' onClick={() => setIsOpen(!isOpen)} className='pr-4'>
         { isOpen ?
         <AiOutlineClose className='text-4xl text-grey-custom' /> :
         <GiHamburgerMenu className='text-4xl text-grey-custom' /> }
       </button>
 
-      <div className={`w-full flex flex-col items-center -z-1 px-6 bg-amber-200 h-screen absolute ${ isOpen ? 'right-0' : '-right-full' } transition-all`}>
+      <div className={`w-full flex flex-col items-center -z-1 px-6 bg-amber-200 h-screen absolute ${ isOpen ? 'right-0' : '-right-full' } transition-all duration-700`}>
         <ul className='w-full pt-28'>
           <li className='text-grey-custom flex justify-between items-center border-b border-grey-custom mb-4 pb-4'>Product <span><IoIosArrowDown /></span></li>
           <li className='text-grey-custom flex justify-between items-center border-b border-grey-custom mb-4 pb-4'>Template <span><IoIosArrowDown /></span></li>

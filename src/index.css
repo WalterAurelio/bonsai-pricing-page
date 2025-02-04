@@ -11,8 +11,14 @@
   /* Colors */
   --color-mint-custom: #00b289;
   --color-grey-custom: #4c4d5f;
+  --color-lgrey-custom: #999999;
   --color-yellow-custom: #f8db62;
 
   /* Fonts */
   --font-amerigo: 'Amerigo BT', sans-serif;
+
+  /* Responsive Design Breakpoints */
+  --breakpoint-ph: 480px;
+  --breakpoint-tb: 768px;
+  --breakpoint-dt: 1024px;
 }
