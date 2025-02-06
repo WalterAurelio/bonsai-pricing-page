@@ -11,22 +11,22 @@ function Navbar() {
     <nav className='flex justify-between relative overflow-x-clip'>
       <img src={bonsai_logo} alt='bonsai_logo' className='pt-4 pl-4' />
 
-      <button type='button' onClick={() => setIsOpen(!isOpen)} className='pr-4'>
+      <button type='button' onClick={() => setIsOpen(!isOpen)} className='pr-4 z-1'>
         { isOpen ?
         <AiOutlineClose className='text-4xl text-grey-custom' /> :
         <GiHamburgerMenu className='text-4xl text-grey-custom' /> }
       </button>
 
-      <div className={`w-full flex flex-col items-center -z-1 px-6 bg-amber-200 h-screen absolute ${ isOpen ? 'right-0' : '-right-full' } transition-all duration-700`}>
+      <div className={`w-full flex flex-col items-center px-6 bg-amber-200 h-screen absolute ${ isOpen ? 'right-0' : '-right-full' } transition-all duration-700`}>
         <ul className='w-full pt-28'>
-          <li className='text-grey-custom flex justify-between items-center border-b border-grey-custom mb-4 pb-4'>Product <span><IoIosArrowDown /></span></li>
-          <li className='text-grey-custom flex justify-between items-center border-b border-grey-custom mb-4 pb-4'>Template <span><IoIosArrowDown /></span></li>
-          <li className='text-grey-custom border-b border-grey-custom mb-4 pb-4'>Pricing</li>
-          <li className='text-grey-custom border-b border-grey-custom mb-6 pb-4'>Reviews</li>
+          <li className='font-proximanova text-grey-custom flex justify-between items-center border-b border-grey-custom mb-4 pb-4'>Product<span><IoIosArrowDown /></span></li>
+          <li className='font-proximanova text-grey-custom flex justify-between items-center border-b border-grey-custom mb-4 pb-4'>Templates<span><IoIosArrowDown /></span></li>
+          <li className='font-proximanova text-grey-custom border-b border-grey-custom mb-4 pb-4'>Pricing</li>
+          <li className='font-proximanova text-grey-custom border-b border-grey-custom mb-6 pb-4'>Reviews</li>
         </ul>
 
-        <button type='button' className='text-mint-custom w-full rounded-sm py-2 uppercase font-bold border border-mint-custom mb-4'>Log in</button>
-        <button type='button' className='bg-mint-custom text-white w-full rounded-sm py-2 uppercase font-bold'>Start free</button>
+        <button type='button' className='font-proximanova text-mint-custom w-full rounded-sm py-3 uppercase font-bold border border-mint-custom mb-4 text-sm tracking-widest'>Log in</button>
+        <button type='button' className='font-proximanova bg-mint-custom text-white w-full rounded-sm py-3 uppercase font-bold text-sm tracking-widest'>Start free</button>
       </div>
     </nav>
   );
